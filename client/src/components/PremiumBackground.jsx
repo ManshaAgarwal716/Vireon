@@ -10,13 +10,10 @@ export default function PremiumBackground() {
 
   return (
     <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10">
-      {/* Dark base overlay for readability */}
       <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_15%_-10%,rgba(124,58,237,0.22),transparent_60%),radial-gradient(900px_520px_at_90%_10%,rgba(59,130,246,0.18),transparent_55%),linear-gradient(180deg,#06080c,#070d0b_35%,#0b1210)]" />
 
-      {/* Mesh dots */}
       <div className="absolute inset-0 opacity-[0.06] bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.9)_1px,transparent_1px)] [background-size:52px_52px]" />
 
-      {/* Floating blobs */}
       <motion.div
         className="absolute -top-44 -left-56 h-[720px] w-[720px] rounded-full blur-3xl opacity-20"
         style={{

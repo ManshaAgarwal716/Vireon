@@ -1,5 +1,14 @@
 const Project = require("../models/Project");
-const { analyzeProject } = require("../services/aiAnalysis");
+
+const analyzeProject = async (project) => {
+  return {
+    score: Math.floor(Math.random() * 40) + 60,
+    suggestions: ["Improve UI", "Add more features"],
+    improvements: ["Use better naming", "Optimize performance"],
+    model: "mock-ai",
+    analyzedAt: new Date(),
+  };
+};
 
 function parseList(value) {
   if (!value) return [];
@@ -42,7 +51,7 @@ const createProject = async (req, res) => {
         score: null,
         suggestions: [],
         improvements: [],
-        model: process.env.OPENAI_MODEL || "gpt-4o-mini",
+        model: "mock-ai",
         analyzedAt: new Date(),
         error: aiError?.message || "AI analysis failed",
       };

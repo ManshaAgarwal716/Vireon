@@ -1,10 +1,9 @@
 import axios from "axios";
 
-const baseURL =
-  import.meta.env.VITE_API_URL?.toString() || "http://localhost:3000";
+
 
 export const http = axios.create({
-  baseURL,
+  baseURL: "http://localhost:3000", // ✅ FORCE THIS
 });
 
 http.interceptors.request.use((config) => {

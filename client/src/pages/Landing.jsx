@@ -19,7 +19,7 @@ const features = [
 ];
 
 export default function Landing() {
-  const shouldReduceMotion = useReducedMotion(); // ✅ FIX ADDED
+  const shouldReduceMotion = useReducedMotion(); 
 
   return (
     <div className="relative min-h-screen overflow-hidden">

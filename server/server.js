@@ -8,13 +8,24 @@ const collaborationRoutes = require("./routes/collaborationRoutes");
 
 const app = express();
 
-app.use(cors());
-app.use(express.json());
+app.use(
+  cors({
+    origin: "http://localhost:5173", // or 5174 (your frontend)
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  })
+);
 
+app.use(express.json());
+console.log("Auth routes loaded");
 app.use("/api/auth", authRoutes);
 app.use("/api/projects", require("./routes/projectRoutes"));
 app.use("/api/collaboration-requests", collaborationRoutes);
 console.log("MONGO_URI:", process.env.MONGO_URI);
+app.get("/all-routes", (req, res) => {
+  res.send("Server is working");
+});
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => {
