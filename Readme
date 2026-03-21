@@ -1,0 +1,70 @@
+# 🚀 Vireon  
+### Collaborate • Build • Grow  
+
+> A modern developer platform to **share projects, find collaborators, and get AI-powered insights**
+
+---
+
+## 🌟 Overview  
+
+**Vireon** is a platform designed for developers to build, connect, and grow together.  
+It helps you showcase your work, discover new ideas, and collaborate with like-minded developers.
+
+---
+
+## ✨ Features  
+
+- 🔍 **Explore Projects**  
+  Browse projects built by other developers  
+
+- 🤝 **Find Collaborators**  
+  Connect with developers based on skills and interests  
+
+- 🧠 **AI Project Analysis**  
+  Get intelligent suggestions to improve your projects  
+
+- 📤 **Upload Projects**  
+  Showcase your work and build your portfolio  
+
+- 🧑‍💻 **Developer Profiles**  
+  Highlight your skills and contributions  
+
+- ⚡ **Modern UI/UX**  
+  Clean, responsive, and smooth interface  
+
+---
+
+## 🛠️ Tech Stack  
+
+### Frontend
+- React.js  
+- Tailwind CSS  
+- Framer Motion  
+
+### Backend
+- Node.js  
+- Express.js  
+
+### Database
+- MongoDB Atlas  
+
+### Other
+- REST APIs  
+
+---
+
+## 📸 Screenshots  
+-
+![Landing](./screenshots/1.png)  
+![Register](./screenshots/2.png)  
+![Project Page](./screenshots/3.png)
+
+
+---
+
+## 🚀 Getting Started  
+
+### 1. Clone the repository  
+```bash
+git clone https://github.com/your-username/vireon.git
+cd vireon
